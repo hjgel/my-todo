@@ -18,4 +18,4 @@ jobs:
         run: npx github-label-sync --labels labels.yml --access-token "$GITHUB_TOKEN" "$GITHUB_REPOSITORY"
         working-directory: .github
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
